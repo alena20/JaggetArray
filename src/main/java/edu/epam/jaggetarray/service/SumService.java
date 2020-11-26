@@ -8,10 +8,9 @@ public class SumService implements ICompare {
     public int compare(int[] firstArray, int[] secondArray) {
         if (arraySum(firstArray) > arraySum(secondArray)) {
             return 1;
-        } else if (arraySum(firstArray) < arraySum(secondArray)) {
+        } else {
             return -1;
         }
-        return 0;
     }
 
     public int arraySum(int[] array) {

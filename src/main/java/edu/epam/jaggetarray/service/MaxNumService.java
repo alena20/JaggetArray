@@ -5,13 +5,12 @@ import edu.epam.jaggetarray.api.ICompare;
 public class MaxNumService implements ICompare {
 
     @Override
-    public int compare(int[] one, int[] two) {
-        if (getLargestNumber(one) > getLargestNumber(two)) {
+    public int compare(int[] firstArray, int[] secondArray) {
+        if (getLargestNumber(firstArray) > getLargestNumber(secondArray)) {
             return 1;
-        } else if (getLargestNumber(one) < getLargestNumber(two)) {
+        } else{
             return -1;
         }
-        return 0;
     }
 
     public int getLargestNumber(int[] array) {

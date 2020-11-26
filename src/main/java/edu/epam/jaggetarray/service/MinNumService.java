@@ -8,10 +8,9 @@ public class MinNumService implements ICompare {
     public int compare(int[] firstArray, int[] secondArray) {
         if (getSmallestNumber(firstArray) > getSmallestNumber(secondArray)) {
             return 1;
-        } else if (getSmallestNumber(firstArray) < getSmallestNumber(secondArray)) {
+        } else{
             return -1;
         }
-        return 0;
     }
 
     public int getSmallestNumber(int[] array) {
